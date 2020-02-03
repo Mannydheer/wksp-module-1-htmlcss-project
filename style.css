@@ -5,6 +5,7 @@ body {
     background-image: url('FALCON\ 9.png');
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
+    max-width: 100%;
    
     
 }
@@ -20,7 +21,10 @@ body {
 /* NAVIGATION */
 .navigation {
     background-color: rgb(67,67,69);
-    padding: 10px 0 15px 0;   
+    padding: 10px 0 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .list {
     margin: 0;
@@ -155,28 +159,32 @@ body {
 
 /* images */
 
+.gridimages {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .images {
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gridimages div h3 {
+   
+    text-align: center;
+    position: absolute;
+    /* visibility: hidden; */
+}
+.gridimages div {
+    position: relative;
 }
 
-.images ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    
-}
+
 
 /* FIX IMAGE WIDTH  */
-.images ul li {
-    padding: 0;
-    margin: 0;
-    
-    height: 300px;
-    display: inline;
-}
+
 /* IMAGE ANIMATIONS. */
-.images ul li:hover {
+.gridimages .images:hover {
     animation: pop 1s ease-out;
 
 }
