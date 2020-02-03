@@ -4,8 +4,8 @@ body {
     /* why place in body? */
     background-image: url('FALCON\ 9.png');
     background-repeat: no-repeat;
-    height: 100vh;
     font-family: 'Poppins', sans-serif;
+   
     
 }
 
@@ -17,6 +17,7 @@ body {
     width: 30px;
     height: 30px;
 }
+/* NAVIGATION */
 .navigation {
     background-color: rgb(67,67,69);
     padding: 10px 0 15px 0;   
@@ -25,28 +26,33 @@ body {
     margin: 0;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 10px;
-    color: white;
+    padding: 20px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     list-style-type: none;
 }
 
- 
+/* NAV BAR */
+.list a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
 
+.list a:hover {
+    border-bottom: solid white 10px;
+}
 
 /* MAIN - FIX MINIMIZE ISSUE.*/
 
 .maintext {
 
 
-    margin: 100px;
+    margin: 200px 100px 100px 100px;
     color: white;
     border: solid white 4px;
-    height: auto;
-    
-    padding: 0;
-    grid-column-gap: 30px;
+    padding: 30px;
+    grid-column-gap: 20px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -59,25 +65,27 @@ body {
 /* GRID TEMPLATE AREA */
 .falcon {
     grid-area: falcon;
-    font-size: 60px;
+    font-size: 70px;
     padding: 60px;
-    max-width: 100%;
+    
 }
 .dreams {
     grid-area: dreams;
     font-size: 50px;
     padding: 20px;
-    max-width: 100%;
+    
 }
 .textone {
     grid-area: textone;
     padding: 20px;
-    max-width: 100%;
+    font-size: 20px;
+    
 }
 .texttwo {
     grid-area: texttwo;
     padding: 20px;
-    max-width: 100%;
+    font-size: 20px;
+    
 }
 
 
@@ -90,18 +98,109 @@ body {
         ;
     } */
 
+/* ----------------------------- */
+/* FEATURES */
 
-
-    /* FEATURES */
-
-    .boxes {
-        margin-top: 500px;
-        text-align: center;
+    /* Section called boxes will be flexed. Also it is one whole container.  */
+.boxes {
+    margin: 300px 0 60px 0;
+    text-align: center;
+    display: flex;
        
     }
 .features {
-    border
+    box-shadow: 0 0 10px 1px #ddd;
     padding: 0;
-    margin: 30px
+    margin: 30px;
+}
+
+.btns {
+    background-color: rgb(67,67,69);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* SOME COOL TEXT INFO SECTION */
+
+.textfirst {
+    background-color: rgb(67,67,69);
+    color: white;
+    padding: 80px;
+}
+
+.textfirst h3 {
+    font-size: 60px;
+}
+.textfirst p {
+    font-size: 30px
+}
+
+/* <!-- SLICK GRADIENT TEXT INFO SECTION --> */
+
+.textsecond {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,255,1) 0%, rgba(255,255,255,1) 0%, rgba(6,179,255,1) 88%, rgba(0,212,255,1) 100%);
+    padding: 80px;
+}
+
+.textsecond h3 {
+    font-size: 60px;
+}
+
+.textsecond p { 
+    font-size: 30px;
+}
+
+
+/* images */
+
+.images ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
     
+}
+
+/* FIX IMAGE WIDTH  */
+.images ul li {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    height: 300px;
+    display: inline;
+}
+/* IMAGE ANIMATIONS. */
+.images ul li:hover {
+    animation: pop 1s ease-out;
+
+}
+@keyframes pop {
+    25%  {transform: scale(1);}
+    75%  {transform: scale(1.1);}
+}
+
+
+/* ---------------------------------------------- */
+
+
+/* MAILING LIST SECTION */
+
+.mail {
+    text-align: center;
+    
+}
+
+.emailbox {
+    padding: 10px 50px 10px 50px;
+    margin: 0;
+    border: darkgray solid 2px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
 }

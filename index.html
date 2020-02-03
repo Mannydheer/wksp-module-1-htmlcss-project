@@ -7,34 +7,34 @@
   <body>
       <nav class="navigation">
           <ul class="list">
-            <img class="img" src="/Asstes-Webpage-Project 2/orange-1618917_640.png">
-            <li> <a href="#">Features</a></li>
-            <li><a href="#">Advantages</a></li>
-            <li><a href="#">Gallery</a></li>  
+            <li><a href="#mainlink"><img class="img" src="/Asstes-Webpage-Project 2/orange-1618917_640.png"></a></li>
+            <li> <a href="#boxlink">Features</a></li>
+            <li><a href="#textlink">Advantages</a></li>
+            <li><a href="#imglink">Gallery</a></li>  
             <li><a href="#">Products</a></li>
           </ul>
       </nav>
 
-      <main class="maintext">
+      <main class="maintext" id="mainlink">
         <div class="falcon"> <p>Falcon 9</p></div>
         <div class="dreams"> <p>We make dreams come true</p></div>
         <div class="textone"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> </div>
         <div class="texttwo"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> </div>
       </main>
 <!-- AMAZING FEATURES SECTION -->
-      <section class="boxes">
+      <section class="boxes" id="boxlink">
         <div class="features">
           <img src="/Asstes-Webpage-Project 2/icons_05.jpg">
           <h3>Amazing feature 1</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, assumenda!</p>
-          <h3 class="btns">Get it</h3>
+          <h3 class="btns">Sell it</h3>
         </div>
 
         <div class="features">
           <img src="/Asstes-Webpage-Project 2/icons_07.jpg">
           <h3>Amazing feature 2</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, assumenda!</p>
-          <h3 class="btns">Get it</h3>
+          <h3 class="btns">Do it</h3>
         </div>
 
         <div class="features">
@@ -47,26 +47,29 @@
     
 <!-- SOME COOL TEXT INFO SECTION -->
 
-<section class="textone">
+<section class="textfirst" id="textlink">
   <h3>Some cool text</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil?</p>
 </section>
 <!-- SLICK GRADIENT TEXT INFO SECTION -->
-<section class="texttwo">
+<section class="textsecond">
   <h3>Slick gradient</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil?</p>
 </section>
 
 <!-- IMAGES SECTIONS -->
-<section class="images">
+<section class="images" id="imglink">
   <ul>
-    <li><img src="/Asstes-Webpage-Project 2/grid_02.jpg"></a>The Model S</li>
-    <li><img src="/Asstes-Webpage-Project 2/grid_02.jpg"></a>Cool Cat</li>
-    <li><img src="/Asstes-Webpage-Project 2/grid_02.jpg"></a>So sneaky</li>
-    <li><img src="/Asstes-Webpage-Project 2/grid_02.jpg"></a>cool</li>
-    <li><img src="/Asstes-Webpage-Project 2/grid_02.jpg"></a>cool</li>
-    <li><img src="/Asstes-Webpage-Project 2/grid_02.jpg"></a>cool</li>
+    <li><img src="/Asstes-Webpage-Project 2/grid_02.jpg"></li>
+    <li><img src="/Asstes-Webpage-Project 2/grid_04.jpg"></li>
+    <li><img src="/Asstes-Webpage-Project 2/grid_06.jpg"></li>
   </ul>
+  <ul>
+    <li><img src="/Asstes-Webpage-Project 2/grid_07.jpg"></li>
+    <li><img src="/Asstes-Webpage-Project 2/grid_08.jpg"></li>
+    <li><img src="/Asstes-Webpage-Project 2/grid_09.jpg"></li>
+</ul>
+   
 </section>
 
 
@@ -74,14 +77,24 @@
 <!-- MAILING LIST SECTION -->
 
 <section class="mail">
-  <h3>Register for our mailing list</h3>
-  <input type="email" name="email">
-  <h3>Send me daily cat images</h3>
-  <input type="checkbox" name="checkboxemail">
+  <h3>Register for our mailing list:</h3>
+  <input class="emailbox" type="email" name="email">
+  <h3>   <input type="checkbox" name="checkboxemail">
+    Send me daily cat images</h3>
 </section>
 
 
+
+
+
+
 <!-- FOOTER SECTION -->
-<footer></footer>
+<footer class="footer">
+  <h3>About us </h3>
+  <h3>Privacy Policy</h3>
+  <h3>Legal Notes</h3> 
+  <h3>Copyright</h3>
+ 
+</footer>
   </body>
 </html>
