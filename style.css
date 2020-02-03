@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* why place in body? */
+    background-image: url('FALCON\ 9.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* FEATURE BUTTONS  */
+
+
+
+.img {
+    width: 30px;
+    height: 30px;
+}
+.navigation {
+    background-color: rgb(67,67,69);
+    padding: 10px 0 15px 0;   
+}
+.list {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+ 
+
+
+/* MAIN - FIX MINIMIZE ISSUE.*/
+
+.maintext {
+
+
+    margin: 100px;
+    color: white;
+    border: solid white 4px;
+    height: auto;
+    
+    padding: 0;
+    grid-column-gap: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "falcon dreams dreams"
+    "falcon textone texttwo" ;
+    
+}
+
+/* GRID TEMPLATE AREA */
+.falcon {
+    grid-area: falcon;
+    font-size: 60px;
+    padding: 60px;
+    max-width: 100%;
+}
+.dreams {
+    grid-area: dreams;
+    font-size: 50px;
+    padding: 20px;
+    max-width: 100%;
+}
+.textone {
+    grid-area: textone;
+    padding: 20px;
+    max-width: 100%;
+}
+.texttwo {
+    grid-area: texttwo;
+    padding: 20px;
+    max-width: 100%;
+}
+
+
+ /* FOR MOBILE? */
+/* @media (min-width: 768px) {
+    .maintext {
+        grid-template-areas: 
+        "falcon dreams dreams"
+        "falcon textone texttwo"
+        ;
+    } */
+
+
+
+    /* FEATURES */
+
+    .boxes {
+        margin-top: 500px;
+        text-align: center;
+       
+    }
+.features {
+    border
+    padding: 0;
+    margin: 30px
+    
+}

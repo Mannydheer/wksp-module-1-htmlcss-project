@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Asstes-Webpage-Project",
+			"path": "/Users/maniderdheer/Downloads/Asstes-Webpage-Project"
+		},
+		{
+			"name": "wksp-module-1-htmlcss-project",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wksp-module-1-htmlcss-project"
+	}
+}
