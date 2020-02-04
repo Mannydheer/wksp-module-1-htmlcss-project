@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* why place in body? */
+    background-image: url('FALCON\ 9.png');
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;    
+}
+/* FEATURE BUTTONS  */
+.img {
+    width: 30px;
+    height: 30px;
+}
+/* NAVIGATION */
+.navigation {
+    background-color: rgb(67,67,69);
+    padding: 20px 0 0 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* hamburger menu */
+.navigation .burger div {
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+    display: none;
+}
+
+.list {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+/* NAV BAR */
+.list a {
+    color: white;
+    text-decoration: none;
+    padding: 50px 0 0 0;
+    
+}
+
+.list a:hover {
+    border-bottom: solid white 10px;
+}
+
+/* MAIN - FIX MINIMIZE ISSUE.*/
+
+.maintext {
+    width: 1170px;
+    margin: 300px 100px 100px 100px;
+    color: white;
+    border: solid white 4px;
+    padding: 30px;
+    grid-column-gap: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "falcon dreams dreams"
+    "falcon textone texttwo" ;
+   
+    
+}
+
+/* GRID TEMPLATE AREA */
+.falcon {
+    grid-area: falcon;
+    font-size: 70px;
+    padding: 60px;
+    
+}
+.dreams {
+    grid-area: dreams;
+    font-size: 50px;
+    padding: 20px;
+    
+}
+.textone {
+    grid-area: textone;
+    padding: 20px;
+    font-size: 20px;
+    
+}
+.texttwo {
+    grid-area: texttwo;
+    padding: 20px;
+    font-size: 20px;
+    
+}
+
+
+ /* FOR MOBILE? */
+/* @media (min-width: 768px) {
+    .maintext {
+        grid-template-areas: 
+        "falcon dreams dreams"
+        "falcon textone texttwo"
+        ;
+    } */
+
+/* ----------------------------- */
+/* FEATURES */
+
+    /* Section called boxes will be flexed. Also it is one whole container.  */
+.boxes {
+    margin: 300px 0 60px 0;
+    text-align: center;
+    display: flex;
+       
+    }
+.features {
+    box-shadow: 0 0 10px 1px #ddd;
+    padding: 0;
+    margin: 30px;
+}
+
+.btns {
+    background-color: rgb(67,67,69);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.boxes .features .btns {
+    cursor: pointer;
+}
+
+/* SOME COOL TEXT INFO SECTION */
+
+.textfirst {
+    background-color: rgb(67,67,69);
+    color: white;
+    padding: 80px;
+    
+}
+
+.textfirst h3 {
+    font-size: 60px;
+}
+.textfirst p {
+    font-size: 30px
+}
+
+/* <!-- SLICK GRADIENT TEXT INFO SECTION --> */
+
+.textsecond {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,255,1) 0%, rgba(255,255,255,1) 0%, rgba(6,179,255,1) 88%, rgba(0,212,255,1) 100%);
+    padding: 80px;
+}
+
+.textsecond h3 {
+    font-size: 60px;
+}
+
+.textsecond p { 
+    font-size: 30px;
+}
+
+/* ANIMATION BOX */
+
+.textcontainer {
+    position: relative;
+}
+.animationbox {
+    border: solid black 3px;
+    padding: 30px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background-color: aquamarine;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.animationbox h3 {
+    color: brown;
+}
+
+.animationbox:hover {
+    
+        transform: rotateZ(30deg);
+
+}
+
+
+
+/* images */
+
+.gridimages {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 300px;
+}
+.images {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* TEXT ANIMATIONS.  */
+.gridimages div h3 {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 30px;
+    color: white;
+    display: block;
+    /* visibility: hidden; */
+}
+.gridimages div {
+    position: relative;
+}
+/* IMAGE ANIMATIONS. */
+
+/* .gridimages div h3:hover {
+animation: show 2s ease-out;
+}
+@keyframes show {
+    25%  {transform: scale(1);}
+    75%  {transform: scale(1.5);}
+} */
+
+.gridimages .images:hover {
+    animation: pop 1s ease-out;
+}
+@keyframes pop {
+    25%  {transform: scale(1);}
+    75%  {transform: scale(1.1);}
+}
+
+
+/* ---------------------------------------------- */
+
+
+/* MAILING LIST SECTION */
+
+.mail {
+    text-align: center;
+    
+}
+
+.emailbox {
+    padding: 10px 0px 10px 5px;
+    width: 15%;
+    margin: 0;
+    border: darkgray solid 2px;
+}
+
+.mail button {
+    padding: 8px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mail button:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.boxcheck {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.boxcheck .checkbox {
+    padding: 20px;
+    border-radius: 3px;
+   
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* navbar */
+    .navigation .burger div {
+        /* width: 25px;
+        height: 5px;
+        background-color: white;
+        margin: 5px;
+        display: block; */
+    }
+
+    .list a {
+        /* background-color: blue;
+        position: absolute;
+        right: 0px;
+        top: 15vh;
+        height: 50vh;
+         */
+
+        
+        
+    }
+
+
+
+
+
+    /* MAINTEXT */
+
+    .maintext {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 300px;
+        padding-bottom: 50px;
+        padding-right: 0;
+        padding-top: 0;
+        padding-left: 0;
+      
+    }
+    
+    .maintext p {
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+       
+    }
+    /* FEATURES MOBILE */
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    /* BRING ANIMATION BOX DOWN. */
+    .animationbox {
+           margin-top: 50px;
+        }
+
+    .gridimages {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+
+ /* MAILING AND FOOTER */
+
+ 
+    
+}
+
+    
